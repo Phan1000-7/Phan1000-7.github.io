@@ -81,7 +81,7 @@
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <header id="header">
-    <a href="/" class="logo">MICCALL</a>
+    <a href="/" class="logo">Phantom</a>
 </header>
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special" >
@@ -174,10 +174,7 @@
 <p> 该模型是由两个网络组成的深层次神经网络结构，将一个网络与另一个网络相互对立。一个神经网络称为生成器，生成新的数据实例；另一个神经网络称为鉴别器，评估它们的真实性，即鉴别器决定它所审查的每个数据实例是否属于实际训练数据集。生成器模型根据输入的低分辨率图像<strong>生成其对应的高分辨率图像</strong>，而鉴别器用于<strong>判断图像属于生成的高分辨率图还是真实的高分辨率图像</strong>，两者相互迭代训练，直到鉴别器无法分辨出输入的图像是生成的图像还是真实的图像，则认为两者达到了均衡，最后生成器模型能够生成出以假乱真的高分辨率图像。</p>
 </li>
 </ul>
-<h2 id="SRCNN"><a href="#SRCNN" class="headerlink" title="SRCNN"></a>SRCNN</h2><img src="C:\Users\Phantom\AppData\Roaming\Typora\typora-user-images\image-20220929165051794.png" alt="image-20220929165051794" style="zoom: 50%;" />
-
-<p>mse为原图与处理后图间的均方误差，因此psnr越大说明失真少</p>
-<p><img src="C:\Users\Phantom\AppData\Roaming\Typora\typora-user-images\image-20220929165520285.png" alt="image-20220929165520285"></p>
+<h2 id="SRCNN"><a href="#SRCNN" class="headerlink" title="SRCNN"></a>SRCNN</h2><p>mse为原图与处理后图间的均方误差，因此psnr越大说明失真少</p>
 <ul>
 <li><p>算法流程</p>
 <p>1.把图片<em><strong>x</strong></em>展到需要的大小，利用bicubic插值得到<em><strong>y</strong></em>   目的为了把<em><strong>y</strong></em>重建成<em><strong>x</strong></em>的高分辨率版本</p>
